@@ -1,0 +1,144 @@
+.container{
+    display: flex;
+    height: 100%;
+}
+.stock-col{
+    color: white;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+
+}
+.stock-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.stock-content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.stock-grid{
+    flex-grow: 1;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-template-rows: min-content;
+    gap: 10px;
+    justify-content: center;
+}
+@media (max-width: 1250px) {
+    .stock-grid{
+        grid-template-columns: repeat(2, 280px);
+    }
+}
+@media (max-width: 970px) {
+    .stock-grid{
+        grid-template-columns: repeat(1, 280px);
+    }
+}
+.stock-card{
+    width: 280px;
+    height: 140px;
+    display: flex;
+    gap: 5px;
+    background-color: #2D3250;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(111, 118, 151, 0.3);
+}
+
+.card-image{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-image img{
+    height: 100%;
+    width: 90px;
+    object-fit: cover;
+}
+.card-content{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+    margin-left: 0;
+}
+
+.card-title{
+    margin: 0;
+    padding-top: 5px;
+
+    font-weight: bold;
+    font-size: 16px;
+    height: 40px;
+    overflow: hidden;
+
+}
+.card-author{
+    font-size: 12px;
+    color: #c9c9cf;
+    height: 30px;
+    margin: 0;
+    padding-top: 5px;
+    overflow: hidden;
+
+}
+.card-actions{
+    height: 30px;
+    margin: 0;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-actions button{
+    background-color: #424769;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 0 1em;
+    cursor: pointer;
+    font-size: 14px;
+    transition: font-size 0.3s ease;
+}
+.card-actions button:hover{
+    background-color: #F6B176;
+}
+
+.stock-page{
+    height: 30px;
+
+}
+
+.transaction-col{
+    background-color: aqua;
+    width: 200px;
+    max-height: 100vh;
+    min-height: 100vh;
+
+}
+
+.stock-header button{
+    color: white;
+    background-color: #F6B176;
+    align-self: center;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none; 
+    outline: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+
+}

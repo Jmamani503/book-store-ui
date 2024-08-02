@@ -1,0 +1,103 @@
+<div class="container">
+    <div class="stock-col">
+        <app-stock-create 
+                [show]="isOpen" 
+                (onCloseModal)="closeModal($event)"/>
+        <h3>Stocks</h3> 
+        <div class="stock-header">
+            <div class="">
+                <input type="text" placeholder="Search a Stock">
+            </div>
+            <button (click)="addStock()">
+                Add Stockd
+            </button> 
+        </div>
+        <div class="stock-content">
+            <div class="stock-grid">
+                @for (stock of stocksList(); track $index) {
+                    <div class="stock-card">
+                        <div class="card-image">
+                            <img src={{stock.book.image}} alt="">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-title">{{stock.book.title}}</p>
+                            <p class="card-author">{{stock.book.author}}</p>
+                            <div class="card-actions">
+                                <button>Details</button>
+                                <button>Update</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                }
+            </div>
+            <div class="stock-page">Paginacion</div>
+        </div>
+
+    </div>
+    <div class="transaction-col">
+        List
+    </div>
+    
+</div>
+
+
+
+<!-- <div class="container">
+
+
+    <div class="card-grid">
+        <div class="card">
+            <div class="card-image">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1675297784i/63068384.jpg" alt="The Way of Kings">
+            </div>
+            <div class="card-content">
+                <h3 class="book-title">The Way of Kings</h3>
+                <p class="book-author">Brandon Sanderson</p>
+                <div class="stock-alert">
+                    <span class="alert-icon">&#9888;</span>
+                    <span class="alert-text">Stock exceeds max</span>
+                </div>
+                <div class="card-buttons">
+                    <button class="details-button">Details</button>
+                    <button class="update-button">Update</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1675297784i/63068384.jpg" alt="The Way of Kings">
+            </div>
+            <div class="card-content">
+                <h3 class="book-title">The Way of Kings</h3>
+                <p class="book-author">Brandon Sanderson</p>
+                <div class="stock-alert">
+                    <span class="alert-icon">&#9888;</span>
+                    <span class="alert-text">Stock exceeds max</span>
+                </div>
+                <div class="card-buttons">
+                    <button class="details-button">Details</button>
+                    <button class="update-button">Update</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1675297784i/63068384.jpg" alt="The Way of Kings">
+            </div>
+            <div class="card-content">
+                <h3 class="book-title">The Way of Kings</h3>
+                <p class="book-author">Brandon Sanderson</p>
+                <div class="stock-alert">
+                    <span class="alert-icon">&#9888;</span>
+                    <span class="alert-text">Stock exceeds max</span>
+                </div>
+                <div class="card-buttons">
+                    <button class="details-button">Details</button>
+                    <button class="update-button">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> -->

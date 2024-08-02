@@ -1,0 +1,22 @@
+:host{
+    width: 100%;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+        "sidebar content";
+}
+
+@media(max-width: 1000px) {
+    :host{
+        grid-template-columns: 80px 1fr;
+    }
+}
+
+.content{
+    display: block;
+    background-color: #424769;
+    grid-area: content;
+    font-family: roboto, sans-serif
+
+}

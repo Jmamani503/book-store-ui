@@ -1,0 +1,33 @@
+@if (open()) {
+    <div class="modal-bg"> 
+        <div class="create-book-modal">
+            <span class="close" (click)="onClose()">&times;</span>
+            <h3>New Book</h3>
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                <div class="create-book-form">
+                    <div class="form-group">
+                        <label for="">Title:</label>
+                        <input type="text" formControlName="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Author:</label>
+                        <input type="text" formControlName="author">
+                    </div>
+                    <div class="form-group">    
+                        <label for="">Image:</label>
+                        <input type="text" formControlName="image">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Genres:</label>
+                        <select name="" id="" multiple formControlName="genres">
+                            <option value="FANTASY">Fantasy</option>
+                            <option value="SCIENCE_FICTION">Science Fiction</option>
+                            <option value="ROMANCE">Romance</option>
+                        </select>
+                    </div>
+                    <app-main-button [text]="textButton"/>
+                </div>
+            </form>
+        </div>
+    </div>
+}

@@ -1,0 +1,33 @@
+.book-card{
+    width: 130px;
+    background-color: #2D3250;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(207, 192, 192, 0.1);
+    .book-card__image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 100px;
+            height: auto;
+        }
+    }
+    .book-card__content{
+        padding: 10px;
+        .content__title{
+            color: #F6B176;
+            font-size: 14px;
+            margin: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden; 
+        }   
+        .content__author{
+            font-size: 12px;
+            margin: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden; 
+        }
+    }
+}

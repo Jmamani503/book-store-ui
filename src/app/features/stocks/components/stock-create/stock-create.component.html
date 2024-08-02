@@ -1,0 +1,61 @@
+@if (show()) {
+<div class="modal-bg">
+    <div class="stock-create-modal">
+        <span class="close" (click)="closeModal()">&times;</span>
+        <h3>New Stock</h3>
+        <form [formGroup]="form" action="" class="form" (ngSubmit)="onSubmit()">
+            <div class="book-data">
+                <p>Book Data</p>
+                <div class="book-form">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="">Title</label>
+                            <input type="text" formControlName="title">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Author</label>
+                            <input type="text" formControlName="author">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Image</label>
+                            <input type="text" formControlName="image">
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="">Edition</label>
+                            <input type="text" formControlName="edition">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Genres</label>
+                            <select name="listOfItems" id="" formControlName="genres" multiple>
+                                <option value="FANTASY">Fantasy</option>
+                                <option value="DRAMA">Drama</option>
+                                <option value="ROMANCE">Romance</option>
+                                <option value="SCIENCE_FICTION">Science Fiction</option>
+                                <option value="ADULT">Adult</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-data">
+                <p>Stock Data</p>
+                <div class="form-col">
+                <div class="book-form">
+                    <div class="form-group">
+                        <label for="">Min</label>
+                         <input type="number" formControlName="min">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Max</label>
+                        <input type="number" formControlName="max">
+                    </div>    
+                </div>
+            </div>
+            </div>
+            <button>Register</button>
+        </form>
+    </div>
+</div>
+}

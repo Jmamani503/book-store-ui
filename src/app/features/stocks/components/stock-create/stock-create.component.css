@@ -1,0 +1,112 @@
+:host{
+    /* position: fixed;
+    display: flex;
+    align-content: center;
+    width: calc(100% -200px); */
+    
+}
+.modal-bg{
+    display: flex;
+    position: fixed;
+    inset: 0px;
+    background-color: #111111bd;
+    z-index: 1000;
+}
+.stock-create-modal{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    background-color: #2D3250;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+    z-index: 1001;
+    position: relative;
+}
+.stock-create-modal h3{
+    display: flex;
+    justify-content: center;
+    color: #F6B176;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.book-data{
+    display: flex;
+    flex-direction: column;
+}
+.book-data p{
+    padding-left: 20px;
+    font-weight: bold;
+}
+.book-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form-col{
+}
+.form-group{
+    display: flex;
+    padding: 0 20px 10px 20px;
+}
+.form-group label{
+    width: 60px;
+
+    width: 100px;
+}
+.form-group input[type="text"]{
+    width: 120px;
+    border-radius: 5px;
+    appearance: none;
+    border: none; 
+    outline: none;
+    height: 24px;
+} 
+.form-group select{
+    width: 120px;
+    border-radius: 5px;
+    appearance: none;
+    border: none; 
+    outline: none;
+    height: 40px;
+} 
+.form-group input[type="number"]{
+    width: 80px;
+    border-radius: 5px;
+    appearance: none;
+    border: none; 
+    outline: none;
+    height: 24px;
+}  
+.form button{
+    color: white;
+    background-color: #F6B176;
+    align-self: center;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    appearance: none;
+    border: none; 
+    outline: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+.form button:hover{
+    background-color: #db8539;
+}
+
+
